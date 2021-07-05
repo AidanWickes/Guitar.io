@@ -1,2 +1,2 @@
 # Guitar.io
- Node.js guiat teaching application
+ Node.js guitar teaching application

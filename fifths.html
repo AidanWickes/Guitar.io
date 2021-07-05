@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Circle of Fifths</title>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="vendor/uikit-3.0.3/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/fifths.css" />
+  <!-- <link rel="stylesheet" href="css/main.css" /> -->
+
+</head>
+
+<body>
+  <!-- Side navigation -->
+  <div class="sidenav" uk-margin>
+    <a href="index.html"><img src="assets/img/logo/logo3.png" /></a>
+    <div class="buttonGroup">
+      <a class="uk-button uk-button-default" href="#">Log in</a>
+      <a class="uk-button uk-button-danger" href="#">Sign up</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!--https://codepen.io/howlingwolf/pen/XdYOqm -->
+    <h1>Circle of Fifths</h1>
+    <h1>(Click + to get started)</h1>
+
+    <div class="component">
+      <!-- Start Nav Structure -->
+      <button class="cn-button" id="cn-button">+</button>
+
+      <div class="cn-wrapper" id="cn-wrapper">
+
+        <ul id="keys" class="major">
+          <li class="key"><a href="#"><span>F</span></a></li>
+          <li class="key active"><a href="#"><span>C</span></a></li>
+          <li class="key"><a href="#"><span>G</span></a></li>
+          <li class="key"><a href="#"><span>D</span></a></li>
+          <li class="key"><a href="#"><span>A</span></a></li>
+          <li class="key"><a href="#"><span>E</span></a></li>
+          <li class="key"><a href="#"><span>B</span></a></li>
+          <li class="key sharp"><a href="#"><span>F</span></a></li>
+          <li class="key flat"><a href="#"><span>B</span></a></li>
+          <li class="key flat"><a href="#"><span>E</span></a></li>
+          <li class="key flat"><a href="#"><span>A</span></a></li>
+          <li class="key flat"><a href="#"><span>D</span></a></li>
+        </ul>
+      </div>
+      <div id="cn-overlay" class="cn-overlay"></div>
+
+      <div id="mode">
+        <!-- Defaults to major -->
+        <div class="major active">
+          <span>I</span>
+          <span>ii</span>
+          <span>iii</span>
+          <span>IV</span>
+          <span>V</span>
+          <span class="rel-min">vi</span>
+          <span class="dim">vii</span>
+        </div>
+        <div class="minor">
+          <span>i</span>
+          <span class="dim">ii</span>
+          <span class="rel-maj">III</span>
+          <span>iv</span>
+          <span>v</span>
+          <span>VI</span>
+          <span>VII</span>
+        </div>
+
+        <span id="scale"></span>
+        <ul id="mode_type">
+          <li id="major" class="active">Major</li>
+          <li id="minor">Minor</li>
+        </ul>
+      </div>
+
+      <!-- End Nav Structure -->
+    </div>
+
+    <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Chord Progression #1</p>
+          <p class="uk-h1">I - IV - V</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Chord Progression #2</p>
+          <p class="uk-h1">I - V - VI - IV</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Chord Progression #3</p>
+          <p class="uk-h1">I - IV - I - V - I</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Chord Progression #2</p>
+          <p class="uk-h1">I - VI - II - V</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="uk-child-width-1-2@s uk-grid-collapse uk-text-center" uk-grid>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Circle Progression #1</p>
+          <p class="uk-h1">I - IV - VII - III - VI - II - V - I</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-tile uk-tile-muted uk-padding-remove">
+          <p class="uk-h4">Circle Progression #2</p>
+          <p class="uk-h1">I - IV - V - I</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- UIkit JS -->
+  <script src="vendor/uikit-3.0.3/js/uikit.min.js"></script>
+  <script src="vendor/uikit-3.0.3/js/uikit-icons.min.js"></script>
+  <!-- jQuery -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/fifths.js"></script>
+</body>
+
+</html>
